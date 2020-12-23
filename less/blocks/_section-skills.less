@@ -1,0 +1,26 @@
+.skills {
+  margin-bottom: 235px;
+}
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-desc__title {
+  margin-bottom: 40px;
+}
+.skills-desc__text {
+  margin-left: 35px;
+  margin-bottom: 38px;
+}
+.skills-desc__text li {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    left: -32px;
+    top: 20px;
+    background-color: #6b6b6b;
+  }
+}
