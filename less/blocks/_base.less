@@ -96,6 +96,7 @@ button {
     padding: 0;
   }
 }
+// Нижнее подчеркивание
 .line-bottom {
   position: relative;
   display: inline-block;
@@ -113,6 +114,7 @@ button {
     z-index: -1;
   }
 }
+// Кнопки
 .btn {
   height: 65px;
   display: inline-block;
@@ -135,6 +137,7 @@ button {
     background-color: #e1bc10;
   }
 }
+// Белая кнопка с контуром
 .btn--light {
   border: 4px solid #464646;
   color: #464646;
@@ -153,11 +156,37 @@ button {
     background-color: #fff;
   }
 }
+// Заголовок 2
 .title2 {
   display: inline-block;
   font-size: 40px;
   font-family: "Mplus 1p ExtraBold";
   text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
 }
-.social-icons {
+// Иконки соц. сетей
+.social-icons-wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    // margin-right: 30px;
+    width: 50px;
+    height: 50px;
+
+    &:last-child {
+      //   margin-right: 0;
+    }
+  }
+}
+.black {
+  color: #000;
+}
+.telegram {
+  color: #039be5;
+}
+.facebook {
+  color: #3b5998;
 }
