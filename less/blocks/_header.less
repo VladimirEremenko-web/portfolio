@@ -1,10 +1,12 @@
 .header {
   max-width: 1600px;
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 240px;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: url("../../img/bg/01.jpg");
+  background-image: url("../img/bg/01.jpg");
   background-repeat: repeat;
   background-size: auto;
   background-position: center;
@@ -20,7 +22,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 175px;
+  margin-bottom: 152px;
 
   display: flex;
   justify-content: space-between;
@@ -33,6 +35,9 @@
   line-height: 1.2;
   position: relative;
   z-index: 2;
+  a {
+    color: #000;
+  }
   &::after {
     content: "";
     height: 10px;
@@ -94,6 +99,9 @@
   height: 28px;
   color: var(--text);
   transition: 0.5s;
+  &:last-child {
+    width: 36px;
+  }
 }
 .lin {
   &:hover {
@@ -111,10 +119,9 @@
   }
 }
 .header-img {
+  margin-bottom: -17px;
   @media (min-width: 1200px) {
     margin-top: -130px;
-    margin-left: 15px;
-    margin-right: 15px;
     max-width: 1600px;
     z-index: 1;
   }
