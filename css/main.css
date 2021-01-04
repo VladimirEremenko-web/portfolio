@@ -186,6 +186,19 @@ button {
 .facebook {
   color: #3b5998;
 }
+.links {
+  display: inline-block;
+  color: #262626;
+  border-bottom: 1px solid #262626;
+}
+.links:hover {
+  color: #039be5;
+  border-color: #039be5;
+}
+.links:active {
+  color: #ea655f;
+  border-color: #ea655f;
+}
 .header {
   max-width: 1600px;
   padding-top: 75px;
@@ -514,18 +527,5 @@ h1 .line-bottom::after {
 }
 .skills-communication__title {
   margin-bottom: 32px;
-}
-.skills-communication__mail a {
-  display: inline-block;
-  color: #262626;
-  border-bottom: 1px solid #262626;
-}
-.skills-communication__mail a:hover {
-  color: #039be5;
-  border-color: #039be5;
-}
-.skills-communication__mail a:active {
-  color: #ea655f;
-  border-color: #ea655f;
 }
 /*# sourceMappingURL=main.css.map */
