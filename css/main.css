@@ -163,6 +163,19 @@ button {
   font-family: "Mplus 1p ExtraBold";
   text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
 }
+.title3 {
+  font-size: 64px;
+  font-family: "Mplus 1p ExtraBold";
+  line-height: 1.3;
+  color: var(--text);
+}
+.title4 {
+  font-size: 32px;
+  font-family: "Mplus 1p Bold";
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.2;
+}
 .social-icons-wrapper {
   width: 100%;
   height: auto;
@@ -202,7 +215,6 @@ button {
 .header {
   max-width: 1600px;
   padding-top: 75px;
-  padding-bottom: 240px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -527,5 +539,91 @@ h1 .line-bottom::after {
 }
 .skills-communication__title {
   margin-bottom: 32px;
+}
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 112px;
+  background-color: #f4f8f9;
+}
+.portfolio-menu {
+  margin-top: 66px;
+  margin-bottom: 50px;
+}
+.portfolio-menu-toggle__item {
+  margin-right: 80px;
+  font-size: 28px;
+  font-family: "Mplus 1p ExtraBold";
+  color: #8fa5ae;
+  line-height: 1.2;
+}
+.portfolio-menu-toggle__item:last-child {
+  margin-right: 0;
+}
+.control-active {
+  color: var(--text);
+}
+.portfolio-projects-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.portfolio-content__item {
+  display: block;
+  max-width: 369px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.portfolio-content__item:hover .portfolio-content__img button {
+  transform: translate(-50%, -50%);
+}
+.portfolio-content__item:hover .portfolio-content__img::after {
+  transform: translateX(0%);
+}
+.portfolio-content__item--big {
+  max-width: 809px;
+}
+.portfolio-content__img {
+  margin-bottom: 30px;
+  position: relative;
+}
+.portfolio-content__img button {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 52px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background-color: #fff;
+  font-size: 22px;
+  font-family: "Mplus 1p ExtraBold";
+  color: #ea736d;
+  line-height: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -250px);
+  z-index: 2;
+  transition: 0.5s;
+}
+.portfolio-content__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 220, 100, 0.5);
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+.portfolio-content__desc.title4 {
+  margin-bottom: 14px;
+}
+.portfolio-content__desc-text {
+  font-size: 22px;
+  font-family: "Mplus 1p Light";
+  color: var(--text);
+  line-height: 1.2;
 }
 /*# sourceMappingURL=main.css.map */
