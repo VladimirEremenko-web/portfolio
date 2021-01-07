@@ -36,5 +36,22 @@ $(document).ready(function () {
         classNames: {
             block: ""
         }
-    });
+	});
+	
+	const filterToggles = document.querySelectorAll('.portfolio-menu-toggle button');
+	const portfolioBigCards = document.querySelectorAll('.portfolio-content__item');
+
+	for (let i = 0; i < filterToggles.length; i++) {
+		filterToggles[i].addEventListener('click', function () {
+			if (i == 0) {
+				for (let j = 0; j < 2; j++) {
+					portfolioBigCards[j].classList.add('portfolio-content__item--big')
+				}
+			} else {
+				for (let j = 0; j < 2; j++) {
+					portfolioBigCards[j].classList.remove('portfolio-content__item--big')
+				}
+			}
+		});
+	}
 })
