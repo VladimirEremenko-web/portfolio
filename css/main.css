@@ -690,4 +690,8 @@ h1 .line-bottom::after {
   color: var(--text);
   line-height: 1.2;
 }
+.timeline {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 /*# sourceMappingURL=main.css.map */
