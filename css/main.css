@@ -181,34 +181,6 @@ button {
   color: var(--text);
   font-weight: 700;
   line-height: 1.2;
-  position: relative;
-}
-.title4::after,
-.title4::before {
-  content: '';
-  height: 2px;
-  width: 0%;
-  background-color: #ed574f;
-  position: absolute;
-  bottom: 0px;
-  z-index: 1;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-.title4::after {
-  left: 50%;
-}
-.title4::before {
-  right: 50%;
-}
-.title4:hover {
-  color: #ed574f;
-}
-.title4:hover::after {
-  width: 50%;
-}
-.title4:hover::before {
-  width: 50%;
 }
 .title5 {
   font-size: 26px;
@@ -707,6 +679,29 @@ h1 .line-bottom::after {
   margin-bottom: 59px;
   overflow: hidden;
 }
+.portfolio-content__item .title4 {
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.portfolio-content__item .title4::after,
+.portfolio-content__item .title4::before {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: #ed574f;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.portfolio-content__item .title4::after {
+  left: 50%;
+}
+.portfolio-content__item .title4::before {
+  right: 50%;
+}
 .portfolio-content__item:hover .portfolio-content__img span {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -714,6 +709,19 @@ h1 .line-bottom::after {
 .portfolio-content__item:hover .portfolio-content__img::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+.portfolio-content__item:hover .title4 {
+  color: #ed574f;
+}
+.portfolio-content__item:hover .title4::after,
+.portfolio-content__item:hover .title4::before {
+  width: 50%;
+}
+.portfolio-content__item:hover .title4::after {
+  left: 50%;
+}
+.portfolio-content__item:hover .title4::before {
+  right: 50%;
 }
 .portfolio-content__item--big {
   max-width: 555px;
@@ -730,6 +738,7 @@ h1 .line-bottom::after {
 }
 .portfolio-content__img span {
   display: inline-block;
+  white-space: nowrap;
   padding-left: 30px;
   padding-right: 30px;
   height: 52px;
