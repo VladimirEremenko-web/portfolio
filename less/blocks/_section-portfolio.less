@@ -49,13 +49,13 @@
   display: block;
   max-width: 369px;
   margin-bottom: 59px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.5s;
+  // margin-left: auto;
+  // margin-right: auto;
+  // transition: 0.5s;
   overflow: hidden;
 }
 .portfolio-content__item:hover {
-  .portfolio-content__img button {
+  .portfolio-content__img span {
     transform: translate(-50%, -50%);
   }
   .portfolio-content__img::after {
@@ -63,7 +63,7 @@
   }
 }
 .portfolio-content__item--big {
-  max-width: 809px;
+  max-width: 555px;
 
   .title4 {
     font-size: 32px;
@@ -75,7 +75,8 @@
 .portfolio-content__img {
   margin-bottom: 23px;
   position: relative;
-  button {
+  span {
+    display: inline-block;
     padding-left: 30px;
     padding-right: 30px;
     height: 52px;
