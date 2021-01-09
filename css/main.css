@@ -65,8 +65,19 @@ svg {
   max-width: 100%;
 }
 button,
+textarea,
 input {
   outline: none;
+}
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
 }
 button {
   display: inline-block;
@@ -657,6 +668,10 @@ h1 .line-bottom::after {
 .portfolio-menu-toggle__item:last-child {
   margin-right: 0;
 }
+.portfolio-menu-toggle__item:hover,
+.portfolio-menu-toggle__item:active {
+  color: #ea736d;
+}
 .control-active {
   color: var(--text);
 }
@@ -831,6 +846,9 @@ h1 .line-bottom::after {
   .timeline_block__item {
     width: 50%;
   }
+}
+.timeline_block__item:hover .line-bottom2::after {
+  background-color: #ea736d;
 }
 .timeline_block__item:first-child::before {
   content: '';
