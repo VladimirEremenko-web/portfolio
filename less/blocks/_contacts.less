@@ -10,7 +10,7 @@
 
 .contacts-title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 .contacts-wrapper {
   position: relative;
@@ -21,33 +21,78 @@
   max-width: 502px;
 }
 .contacts-wrapper__desc-text {
-  margin-bottom: 44px;
+  margin-bottom: 37px;
   font-size: 20px;
   color: var(--text);
   line-height: 1.6;
   text-align: left;
+  
+  &::selection {
+    background-color: #fbdc4d;
+  }
+  &::-moz-selection {
+    background-color: #fbdc4d;
+  }
+  
 }
 .contacts-wrapper__desc-block-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 38px;
+  margin-bottom: 45px;
 }
-.contacts-wrapper__desc-block-item .links {
-  text-align: left;
+.contacts-wrapper__desc-block-item .contact-links-wrapper {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .contact-type {
+  margin-right: 128px;
+  width: 98px;
   font-size: 20px;
   color: var(--text);
   font-weight: 700;
   line-height: 1.2;
 }
-
+.contact-type--phone {
+    margin-right: 98px;
+}
+.contacts-links {
+    font-size: 20px;
+    color: rgb(3, 155, 229);
+    line-height: 1.2;
+    font-weight: 500;
+}
+.contacts-links--gray {
+    color: #96969d;
+}
+._7__980__123_45_67 {
+    font-size: 20px;
+    font-family: "Mplus 1p Medium";
+    color: rgb(150, 150, 157);
+    line-height: 1.2;
+    position: absolute;
+    left: 424.453px;
+    top: 544.206px;
+    z-index: 416;
+  }
+  
+.yurij_kluchevsky_gmail_com {
+    font-size: 20px;
+    font-family: "Mplus 1p Medium";
+    color: rgb(3, 155, 229);
+    line-height: 1.2;
+    position: absolute;
+    left: 424.359px;
+    top: 439.8px;
+    z-index: 408;
+  }
+  
 .contacts-wrapper__img {
   position: absolute;
   max-width: 400px;
   left: 0;
-  top: 0;
-  transform: translate(-100%);
+  top: 0px;
+  transform: translateX(-80%);
   // .move-quot {
   //     transform: translate(-300%, -150%);
   // }
@@ -58,9 +103,9 @@
 }
 .move-quot {
   position: absolute;
-  top: 15%;
+  top: 0;
   left: 0;
-  transform: translate(-500%, 0%);
+  //   transform: translate(-500%, 0%);
   opacity: 0.7;
   max-width: 300px;
 }

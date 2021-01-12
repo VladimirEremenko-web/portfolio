@@ -111,6 +111,14 @@
     color: var(--text);
     line-height: 1.2;
     font-weight: 500;
+    p {
+        &::selection {
+            background-color: #fbdc4d;
+          }
+        &::-moz-selection {
+            background-color: #fbdc4d;
+        }
+    }  
 }
 .timeline-text__time {
     font-size: 18px;
