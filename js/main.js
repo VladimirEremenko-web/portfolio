@@ -64,4 +64,57 @@ $(document).ready(function () {
 			item.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 		}
 	});
+	// form placeholder
+	const formItems = document.querySelectorAll('.form-field');
+	
+	for(let item of formItems){
+		const thisParent = item.closest('.form-item');
+		const thisPlaceholder = thisParent.querySelector('.fake-placeholder');
+		// Если инпут в фокусе		
+		item.addEventListener('focus', function(){
+			thisPlaceholder.classList.add('active');
+		});
+
+		// Если инпут теряет фокус
+		item.addEventListener('blur', function(){
+
+			if(item.value.length > 0){
+				thisPlaceholder.classList.add('active');
+			}
+			else{
+				thisPlaceholder.classList.remove('active');
+			}
+		})
+	}
+	//FORM VALIDATE
+	$('.contacts-form').validate({
+		rules: {
+			email: {
+				required: true,
+				email: true
+			},
+			subject: {
+				required: true
+			},
+			message: {
+				required: true
+			}
+		},
+		messages: {
+			email: {
+				required: 'Введите email',
+				email: 'отсутсвует символ @'
+			},
+			subject: {
+				required: 'Введите тему сообщения'
+			},
+			message: {
+				required: 'Введите текстсообщения'
+			}
+		},
+		submitHandler: function (form) {
+			ajaxFormSubmit();
+		}
+
+	})
 })
