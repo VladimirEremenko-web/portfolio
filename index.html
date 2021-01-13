@@ -16,8 +16,24 @@
     <!-- Mobile menu -->
     <div class="mobile-menu"></div>
     <!-- //Mobile menu -->
+    <!-- Боковые точки -->
+    <ul id="page-nav">
+      <li class="active">
+        <a href="#header"></a>
+      </li>
+      <li>
+        <a href="#portfolio"></a>
+      </li>
+      <li>
+        <a href="#timeline"></a>
+      </li>
+      <li>
+        <a href="#contacts"></a>
+      </li>
+    </ul>
+    <!-- //Боковые точки -->
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-nav">
         <div class="header-nav__container">
           <div
@@ -111,8 +127,8 @@
                   Работаю с соблюдением сроков и выполнением ТЗ.
                 </p>
               </div>
-              <button class="btn">Познакомиться</button>
-              <button class="btn btn--light">Контакты</button>
+              <a class="btn" href="#skills-desc__title"> Познакомиться </a>
+              <a class="btn btn--light" href="#contacts">Контакты</a>
             </div>
           </div>
         </div>
@@ -124,7 +140,7 @@
         <div class="container">
           <div class="skills-wrapper">
             <div class="skills-desc">
-              <div class="skills-desc__title">
+              <div class="skills-desc__title" id="skills-desc__title">
                 <h3 class="title2">Что я умею:</h3>
               </div>
               <div class="skills-desc__text">
@@ -136,7 +152,7 @@
                   <li>с Bootstrap и без него.</li>
                 </ul>
               </div>
-              <button class="btn">Смотреть работы</button>
+              <a class="btn" href="#portfolio">Смотреть работы</a>
             </div>
             <div class="skills-communication">
               <div class="skills-communication__title">
@@ -259,7 +275,7 @@
     <!-- //HEADER -->
     <main>
       <!-- Портфолио -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h3 class="title3"><span class="line-bottom2">Портфолио</span></h3>
           <div class="portfolio-content">
@@ -373,7 +389,7 @@
       </section>
       <!-- //Портфолио -->
       <!-- Тайм-лайн -->
-      <section class="timeline">
+      <section class="timeline" id="timeline">
         <div class="container">
           <div class="timeline-title">
             <h2 class="title3">
@@ -519,7 +535,7 @@
       </section>
       <!-- //Тайм-лайн -->
       <!-- Контакты -->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts-title">
             <div class="title3"><span class="line-bottom2">Контакты</span></div>
@@ -728,13 +744,18 @@
       </div>
     </footer>
     <!-- //Подвал -->
+    <a id="backTop" href="#header">
+      <i class="fas fa-arrow-circle-up"></i>
+    </a>
     <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/9b72afda33.js"></script>
     <script src="./libs/mixitup3/mixitup.min.js"></script>
     <script src="./libs/jquery.validate/jquery.validate.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="./libs/navjs/nav.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

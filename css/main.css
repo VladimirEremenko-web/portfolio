@@ -146,7 +146,7 @@ button {
           border-radius: 30px;
   font-size: 22px;
   font-weight: 700;
-  line-height: 57px;
+  line-height: 65px;
   color: var(--text);
   text-align: center;
   -webkit-transition: 0.5s;
@@ -169,6 +169,7 @@ button {
   -o-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
+  line-height: 57px;
 }
 .btn--light:hover {
   color: #797979;
@@ -255,6 +256,42 @@ button {
 .links:active {
   color: #ea655f;
   border-color: #ea655f;
+}
+#page-nav {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  z-index: 100;
+}
+#page-nav li {
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #89b4cb;
+  margin-bottom: 26px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: #ea736d;
+}
+#backTop {
+  display: block;
+  font-size: 50px;
+  color: #5bcafd;
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
 }
 .header {
   max-width: 1600px;
@@ -375,6 +412,9 @@ button {
   -o-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
+}
+.header-links__item:focus {
+  border: 2px dotted #ea736d;
 }
 .header-links__item:hover::after {
   width: 100%;
@@ -1265,7 +1305,7 @@ form.contacts-form {
   transition: 0.5s;
 }
 .fake-placeholder.active {
-  top: -3px;
+  top: -10px;
   font-size: 16px;
   color: #ed9626;
 }
@@ -1285,6 +1325,12 @@ form.contacts-form {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+}
+.form-btn:hover {
+  background-color: #ffd200;
+}
+.form-btn:active {
+  background-color: #e1bc10;
 }
 label.error {
   font-size: 14px;

@@ -136,7 +136,7 @@ button {
 
   font-size: 22px;
   font-weight: 700;
-  line-height: 57px;
+  line-height: 65px;
   color: var(--text);
   text-align: center;
   transition: 0.5s;
@@ -155,6 +155,7 @@ button {
   background-color: #fff;
   margin-left: 20px;
   transition: 0.5s;
+  line-height: 57px;
 
   &:hover {
     color: #797979;
@@ -247,4 +248,35 @@ button {
     color: #ea655f;
     border-color: #ea655f;
   }
+}
+#page-nav {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  z-index: 100;
+}
+#page-nav li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #89b4cb;
+  margin-bottom: 26px;
+  transition: 0.5s;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: #ea736d;
+}
+#backTop {
+  display: block;
+  font-size: 50px;
+  color: rgb(91, 202, 253);
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
 }
