@@ -260,7 +260,7 @@ button {
 #page-nav {
   position: fixed;
   right: 50px;
-  top: 50px;
+  top: 40%;
   z-index: 100;
 }
 #page-nav li {
