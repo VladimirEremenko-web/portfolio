@@ -295,6 +295,18 @@ button {
   bottom: 20px;
   right: 20px;
   z-index: 5;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+#backTop:hover {
+  color: #058bc9;
+}
+@media (min-width: 1200px) {
+  #backTop {
+    display: none;
+  }
 }
 .header {
   max-width: 1600px;
@@ -1216,6 +1228,32 @@ h1 .line-bottom::after {
   color: #039be5;
   line-height: 1.2;
   font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.contacts-links:before {
+  content: "";
+  width: 0;
+  height: 0.1em;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  background: #ea655f;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contacts-links:hover {
+  color: #ea655f;
+}
+.contacts-links:hover:before {
+  width: 100%;
+  left: 0;
+  background: #ea655f;
 }
 .contacts-links--gray {
   color: #96969d;
@@ -1268,6 +1306,7 @@ form.contacts-form {
 }
 .form-item textarea.form-field {
   height: 118px;
+  padding-top: 15px;
 }
 .form-item + .form-item {
   margin-top: 54px;
@@ -1329,6 +1368,22 @@ label.error {
   color: #f31a0e;
   position: relative;
   top: -10px;
+}
+.contact-form__success {
+  width: 533px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+.contact-form__success::-moz-selection {
+  background-color: #fbdc4d;
+}
+.contact-form__success::selection {
+  background-color: #fbdc4d;
+}
+.contact-form__success::-moz-selection {
+  background-color: #fbdc4d;
 }
 .footer {
   padding-top: 24px;

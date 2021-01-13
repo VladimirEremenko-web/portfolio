@@ -23,6 +23,7 @@ form.contacts-form {
   }
   textarea.form-field {
     height: 118px;
+    padding-top: 15px;
   }
 }
 .form-item + .form-item {
@@ -81,4 +82,18 @@ label.error {
   color: #f31a0e;
   position: relative;
   top: -10px;
+}
+.contact-form__success {
+  width: 533px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+
+  &::selection {
+    background-color: #fbdc4d;
+  }
+  &::-moz-selection {
+    background-color: #fbdc4d;
+  }
 }

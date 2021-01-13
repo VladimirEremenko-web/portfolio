@@ -154,11 +154,13 @@ $(document).ready(function () {
 	$('#backTop').hide();
 
 	$(window).scroll(function(){
-		if( $(this).scrollTop() > 800 ){
-			$('#backTop').fadeIn();
-		}
-		else{
-			$('#backTop').fadeOut();
+		if($(this).width() < 1200){
+			if( $(this).scrollTop() > 800 ){
+				$('#backTop').fadeIn();
+			}
+			else{
+				$('#backTop').fadeOut();
+			}
 		}
 	});
 })
