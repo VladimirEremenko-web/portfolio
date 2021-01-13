@@ -185,7 +185,7 @@ button {
   display: inline-block;
   font-size: 40px;
   font-weight: 800;
-  text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.004);
+  text-shadow: 0px 3px 42.32px rgba(255, 255, 255, 0.4);
 }
 .title3 {
   display: inline-block;
@@ -270,6 +270,9 @@ button {
      -moz-border-radius: 50%;
           border-radius: 50%;
   background-color: #89b4cb;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 26px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1308,6 +1311,14 @@ form.contacts-form {
   top: -10px;
   font-size: 16px;
   color: #ed9626;
+}
+.form-item textarea,
+input {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  text-align: left;
 }
 .form-btn {
   display: inline-block;

@@ -131,7 +131,7 @@ $(document).ready(function () {
 
 			// Функция если все прошло успешно
 			success: function (html) {
-				$(".contact-form").slideUp(800);
+				$(".contacts-form").slideUp(800);
 				$('#answer').html(html);
 			}
 		});
@@ -149,5 +149,16 @@ $(document).ready(function () {
 		begin: function () {},
 		end: function () {},
 		scrollChange: function ($currentListItem) {}
+	});
+	// Показать кнопку скролл вверх
+	$('#backTop').hide();
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 800 ){
+			$('#backTop').fadeIn();
+		}
+		else{
+			$('#backTop').fadeOut();
+		}
 	});
 })
