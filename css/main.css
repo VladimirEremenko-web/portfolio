@@ -1395,12 +1395,30 @@ label.error {
   color: #b0b0b0;
   line-height: 1.62;
 }
+.footer p::-moz-selection {
+  background-color: #fbdc4d;
+}
+.footer p::selection {
+  background-color: #fbdc4d;
+}
+.footer p::-moz-selection {
+  background-color: #fbdc4d;
+}
 .footer p.footer-copyright {
   margin-bottom: 16px;
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
   font-weight: 500;
+}
+.footer p.footer-copyright::-moz-selection {
+  background-color: #fbdc4d;
+}
+.footer p.footer-copyright::selection {
+  background-color: #fbdc4d;
+}
+.footer p.footer-copyright::-moz-selection {
+  background-color: #fbdc4d;
 }
 .footer p a {
   color: #b0b0b0;
@@ -1409,5 +1427,14 @@ label.error {
 .footer p a:hover,
 .footer p a:active {
   color: #fff;
+}
+.footer p a::-moz-selection {
+  background-color: #fbdc4d;
+}
+.footer p a::selection {
+  background-color: #fbdc4d;
+}
+.footer p a::-moz-selection {
+  background-color: #fbdc4d;
 }
 /*# sourceMappingURL=main.css.map */
