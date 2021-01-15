@@ -294,9 +294,7 @@ button {
   height: 0px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #32312e;
-  -webkit-box-shadow: 0px 0px 3px #000 inset;
-          box-shadow: 0px 0px 3px #000 inset;
+  background-color: #f3f3f3;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
