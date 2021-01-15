@@ -783,7 +783,7 @@ h1 .line-bottom::after {
 }
 .portfolio-content__item {
   display: block;
-  max-width: 369px;
+  max-width: 360px;
   margin-bottom: 59px;
   overflow: hidden;
 }
