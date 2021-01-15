@@ -1,14 +1,24 @@
 .mobile-menu {
+    padding: 0 30px;
+    padding-top: 29px;
+
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
+
     width: 100%;
-    max-width: 400px;
-    background-color: lightcoral;
-    z-index: 5;
+    max-width: 320px;
+
+    background-color: #fff;
+    z-index: 15;
+
     transform: translateX(100%);
-    transition: .5s;
+    transition: .4s;
+
+    @media (min-width: 768px) {
+        max-width: 380px;
+    }
 
     @media(min-width: 1200px) {
         display: none;
