@@ -155,7 +155,7 @@ button {
   border: 4px solid #464646;
   color: #464646;
   background-color: #fff;
-  margin-left: 20px;
+  margin-left: 14px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   line-height: 57px;
@@ -225,7 +225,7 @@ button {
 }
 @media (min-width: 768px) {
   .social-icons-wrapper {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -233,7 +233,7 @@ button {
 }
 @media (min-width: 1200px) {
   .social-icons-wrapper {
-    margin-bottom: 21px;
+    margin-bottom: 29px;
   }
 }
 .black {
@@ -390,7 +390,8 @@ button {
 }
 @media (min-width: 768px) {
   .header-nav__container {
-    margin-bottom: 74px;
+    margin-bottom: 57px;
+    padding: 0 28px;
   }
 }
 @media (min-width: 1200px) {
@@ -531,8 +532,8 @@ button {
   }
 }
 .toggle-menu {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,16 +551,17 @@ button {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 8px;
+  height: 5px;
   background-color: #000000;
   -webkit-transition: .5s;
   transition: .5s;
+  z-index: 21;
 }
 .toggle-menu span::before,
 .toggle-menu span::after {
   content: "";
   width: 100%;
-  height: 8px;
+  height: 5px;
   background-color: #000000;
   position: absolute;
   left: 0;
@@ -567,10 +569,10 @@ button {
   transition: .5s;
 }
 .toggle-menu span::before {
-  top: -15px;
+  top: -10px;
 }
 .toggle-menu span::after {
-  bottom: -15px;
+  bottom: -10px;
 }
 .toggle-menu.active span {
   background-color: transparent;
@@ -753,12 +755,12 @@ button {
 }
 .title1 {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: -2px;
 }
 .title1 h1 {
   font-size: 42px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 .title1 span {
   display: inline-block;
@@ -821,6 +823,11 @@ h1 .line-bottom::after {
 .content-desc__text p::-moz-selection {
   background-color: #fbdc4d;
 }
+@media (min-width: 768px) {
+  .content-desc__text p > .none {
+    display: none;
+  }
+}
 @media (min-width: 1200px) {
   .content-desc__text {
     margin-bottom: 30px;
@@ -837,13 +844,13 @@ h1 .line-bottom::after {
 }
 @media (min-width: 768px) {
   .skills {
-    margin-top: -86px;
+    margin-top: -110px;
     padding-top: 100px;
   }
 }
 @media (min-width: 1200px) {
   .skills {
-    padding-top: 70px;
+    padding-top: 41px;
     margin-top: -70px;
     margin-bottom: 235px;
   }
@@ -852,9 +859,6 @@ h1 .line-bottom::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -868,6 +872,13 @@ h1 .line-bottom::after {
             flex-direction: row;
   }
 }
+@media (min-width: 1200px) {
+  .skills-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .skills-desc .title2,
 .skills-communication .title2 {
   font-size: 30px;
@@ -879,7 +890,7 @@ h1 .line-bottom::after {
   }
   .skills-desc .title2,
   .skills-communication .title2 {
-    margin-bottom: 31px;
+    margin-bottom: 23px;
     font-size: 32px;
   }
 }
@@ -908,13 +919,10 @@ h1 .line-bottom::after {
     margin-bottom: 37px;
   }
 }
-.skills-desc__title {
-  margin-bottom: 23px;
-}
 @media (min-width: 1200px) {
   .skills-desc__text {
-    margin-left: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 31px;
+    padding-left: 22px;
   }
 }
 .skills-desc__text li {
@@ -938,11 +946,12 @@ h1 .line-bottom::after {
 }
 @media (min-width: 768px) {
   .skills-desc__text li {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
   .skills-desc__text li {
+    font-size: 24px;
     padding-bottom: 8px;
     padding-left: 8px;
   }
@@ -951,8 +960,8 @@ h1 .line-bottom::after {
     content: "";
     width: 25px;
     height: 2px;
-    left: -32px;
-    top: 20px;
+    left: -24px;
+    top: 16px;
     background-color: #6b6b6b;
   }
 }
@@ -976,12 +985,12 @@ h1 .line-bottom::after {
 @media (min-width: 768px) {
   .skills-communication__title {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
   .skills-communication__title {
-    margin-bottom: 32px;
+    margin-bottom: 7px;
   }
 }
 .portfolio {

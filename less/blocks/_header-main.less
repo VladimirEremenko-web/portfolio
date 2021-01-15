@@ -61,11 +61,11 @@
 }
 .title1 {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: -2px;
   h1 {
     font-size: 42px;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.1;
   }
   span {
     display: inline-block;
@@ -131,7 +131,9 @@ h1 .line-bottom::after {
     }
   }
   @media (min-width: 768px) {
-
+    p > .none {				
+			display: none;
+		}
   }
   @media (min-width: 1200px) {
     margin-bottom: 30px;
