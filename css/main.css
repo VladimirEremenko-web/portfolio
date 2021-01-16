@@ -362,7 +362,7 @@ button {
   width: 15px;
 }
 .header {
-  padding: 33px 0 97px;
+  padding: 30px 0 97px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
