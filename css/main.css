@@ -600,10 +600,11 @@ button {
   max-width: 320px;
   background-color: #fff;
   z-index: 15;
+  opacity: .8;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 @media (min-width: 768px) {
   .mobile-menu {
