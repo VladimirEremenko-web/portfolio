@@ -121,6 +121,23 @@ button {
     z-index: -1;
   }
 }
+// Нижнее подчеркивание мобильного меню
+.mobile-line {
+	position: relative;
+	z-index: 1;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		right: 0;
+		background-color: var(--text);
+		height: 1px;
+		z-index: -1;
+		transition: 0.3s;
+	}
+}
 // Кнопки
 .btn {
   display: none;
