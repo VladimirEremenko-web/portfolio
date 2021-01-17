@@ -163,4 +163,34 @@ $(document).ready(function () {
 			}
 		}
 	});
+	//отображение/скрытие карточек проектов по загрузке страницы
+	if($(window).width() <1200){
+		$('.portfolio-content__item.hide-card').hide();
+		
+		$('.show-project-cards').on('click', function(){
+			$('.portfolio-content__item.hide-card').fadeIn();
+			$(this).hide();
+		})
+	}
+	else{
+		$('.portfolio-content__item.hide-card').fadeIn();
+		$('.show-project-cards').hide();
+	}
+
+	//отображение/скрытие карточек проектов при ресайзе страницы
+	$(window).on('resize', function(){
+		if($(window).width() <1200){
+			$('.portfolio-content__item.hide-card').hide();
+			$('.show-project-cards').fadeIn();
+
+			$('.show-project-cards').on('click', function(){
+				$('.portfolio-content__item.hide-card').fadeIn();
+				$(this).css('display', 'none');
+			});
+		}
+		else{
+			$('.portfolio-content__item.hide-card').fadeIn();
+			$('.show-project-cards').hide();
+		}
+	});
 })
