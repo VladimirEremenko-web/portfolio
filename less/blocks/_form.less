@@ -72,9 +72,12 @@ form.contacts-form {
 }
 
 .fake-placeholder.active {
-  top: -10px;
+  top: -16px;
   font-size: 16px;
   color: #ed9626;
+  @media (min-width: 1200px) {
+    top: -10px;
+  }
 }
 .form-item textarea,
 input {
@@ -123,8 +126,8 @@ label.error {
   top: -10px;
 }
 .contact-form__success {
-  width: 533px;
-  font-size: 20px;
+  width: 100%;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text);
   line-height: 1.2;
@@ -134,5 +137,9 @@ label.error {
   }
   &::-moz-selection {
     background-color: #fbdc4d;
+  }
+  @media (min-width: 1200px) {
+    width: 533px;
+    font-size: 20px;
   }
 }
